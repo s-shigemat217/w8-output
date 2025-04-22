@@ -1,0 +1,104 @@
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+body > .wrap {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+input, button, a {
+  cursor: pointer;
+}
+
+.sec {
+  margin-bottom: 50px;
+}
+
+/*  */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+      column-gap: 10px;
+  row-gap: 15px;
+  padding: 10px;
+  background: #5373db;
+}
+.flex-wrap .flex-item {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  border: solid 1px #000;
+  text-align: center;
+}
+
+.flex-col-2 .flex-item {
+  width: calc((100% - 10px) / 2);
+}
+.flex-col-4 .flex-item {
+  width: calc((100% - 30px) / 4);
+}
+.flex-col-6 .flex-item {
+  width: calc((100% - 60px) / 6);
+}
+
+/* Form */
+.form {
+  padding: 40px;
+  background-color: #202938;
+  color: #fff;
+}
+.form .form-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.form .form-item label {
+  width: 8em;
+}
+.form .form-item input {
+  font-size: 16px;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+}
+.form .form-item + .form-item {
+  margin-top: 1em;
+}
+.form .button {
+  width: 300px;
+  margin: 30px auto 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2464ec;
+  color: #fff;
+  font-size: 20px;
+  transition: box-shadow 0.3s;
+}
+.form .button:hover {
+  opacity: 0.8;
+}
+.form .button + p {
+  color: #929baa;
+}
+.form .button + p a {
+  text-decoration: none;
+  color: #2464ec;
+}
+/*# sourceMappingURL=style.css.map */
